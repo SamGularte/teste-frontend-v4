@@ -1,4 +1,4 @@
-# Nome do Projeto
+# teste-frontend-v4
 
 Esta é a minha solução para o desafio de frontend da Aiko.  
 O projeto consiste no desenvolvimento de uma aplicação web que exibe, de forma clara e eficiente, dados sobre o histórico de posições e estados de equipamentos em operação. A interface foi construída pensando na melhor experiência para os gestores, facilitando a visualização e o acompanhamento das informações.
