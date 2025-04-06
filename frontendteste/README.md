@@ -1,12 +1,41 @@
-# React + Vite
+# Nome do Projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta é a minha solução para o desafio de frontend da Aiko.  
+O projeto consiste no desenvolvimento de uma aplicação web que exibe, de forma clara e eficiente, dados sobre o histórico de posições e estados de equipamentos em operação. A interface foi construída pensando na melhor experiência para os gestores, facilitando a visualização e o acompanhamento das informações.
 
-Currently, two official plugins are available:
+## 💻 Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-## Expanding the ESLint configuration
+- Você instalou o [Node.js](https://nodejs.org/) (versão 18 ou superior recomendada).
+- Você tem o [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/) instalado para gerenciar pacotes.
+- Você está utilizando uma máquina com **Windows**, **Linux** ou **MacOS** (compatível com Node.js e React).
+- Você leu a [documentação oficial do React](https://react.dev/) para melhor entendimento.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Como rodar o projeto
+
+Para instalar as dependências e iniciar o projeto localmente, siga os passos abaixo:
+
+```bash
+# Clone o repositório
+git clone https://github.com/SamGularte/teste-frontend-v4.git -b teste/samuel-garcia-gularte
+
+# Acesse a pasta do projeto
+cd frontendteste
+
+# Instale as dependências
+npm install
+# ou
+yarn install
+
+# Inicie o projeto
+npm start
+# ou
+yarn start
+```
+
+## 🎥 Vídeo Explicativo
+
+Você pode conferir o vídeo explicativo sobre o projeto através do link abaixo:
+
+[➡️ Acessar vídeo explicativo](https://drive.google.com/file/d/1VwuwERFHoY8_uWJ1II7nFkzZ_cmStuPb/view?usp=sharing)

@@ -22,10 +22,18 @@ const useEquipments = () => {
     }
 
     // 🔹 Criar mapas para acesso rápido por ID
-    const modelsMap = Object.fromEntries(equipmentModelsData.map((m) => [m.id, m]));
-    const positionsMap = Object.fromEntries(equipmentPositionsData.map((p) => [p.equipmentId, p.positions]));
-    const statesMap = Object.fromEntries(equipmentStatesData.map((s) => [s.id, s]));
-    const statesHistoryMap = Object.fromEntries(equipmentStatesHistoryData.map((sh) => [sh.equipmentId, sh.states]));
+    const modelsMap = Object.fromEntries(
+      equipmentModelsData.map((m) => [m.id, m])
+    );
+    const positionsMap = Object.fromEntries(
+      equipmentPositionsData.map((p) => [p.equipmentId, p.positions])
+    );
+    const statesMap = Object.fromEntries(
+      equipmentStatesData.map((s) => [s.id, s])
+    );
+    const statesHistoryMap = Object.fromEntries(
+      equipmentStatesHistoryData.map((sh) => [sh.equipmentId, sh.states])
+    );
 
     // 🔹 Criar equipamentos enriquecidos
     const enrichedEquipments = equipmentData.map((equip) => {
@@ -44,7 +52,7 @@ const useEquipments = () => {
           return {
             date: stateRecord.date,
             stateName: stateInfo.name || "Desconhecido",
-            color: stateInfo.color || "#bdc3c7" // cor padrão caso não encontre
+            color: stateInfo.color || "#bdc3c7",
           };
         })
         .sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -56,7 +64,8 @@ const useEquipments = () => {
         ...equip,
         modelName: model.name || "Desconhecido",
         hourlyEarnings: (model.hourlyEarnings || []).map((earning) => ({
-          stateName: statesMap[earning.equipmentStateId]?.name || "Desconhecido",
+          stateName:
+            statesMap[earning.equipmentStateId]?.name || "Desconhecido",
           value: earning.value,
         })),
         positions,

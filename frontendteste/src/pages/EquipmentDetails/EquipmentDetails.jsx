@@ -233,7 +233,7 @@ const EquipmentDetails = () => {
               {produtividade.toFixed(2)}%
             </p>
             <div className={styles.chart}>
-              <PieChart width={290} height={250}>
+              <PieChart width={295} height={250}>
                 <Pie
                   data={data}
                   cx="50%"

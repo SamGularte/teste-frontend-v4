@@ -34,7 +34,6 @@ const clawIcon = new Icon({
 const Dashboard = () => {
   // Importação dos equipamentos
   const equipments = useEquipments();
-  console.log(equipments);
 
   // Estados para modelos, estados e visibilidade dos filtros
   const [selectedModels, setSelectedModels] = useState([]);
